@@ -12,12 +12,12 @@ Inputs:
 
 Outputs:
 
-The script outputs Permeth format bed files for each chromosome of interest in the Bismark format file. 
+1. The script outputs Permeth format bed files for each chromosome of interest in the Bismark format file. 
 (Chromosomes of interest vary depending on the type of genome specified but are all a subset of chromosomes 1-22, X, Y, and M.)
 Permeth format files contain the following data columns:
 [chromosome] [start position] [end position] [% methylated-sumReads] [placeholder00] [strand] [placeholder01] [placeholder02] [color] 
 
-The script also output DSS format files for each chromosome of interest in the Bismark format file. 
+2. The script also output DSS format files for each chromosome of interest in the Bismark format file. 
 DSS format files contain the following data columns:
 [chr = chromosome] [pos = start position] [N = count methylated + count unmethylated] [X = count methylated]
 
