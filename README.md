@@ -21,3 +21,8 @@ Permeth format files contain the following data columns:
 DSS format files contain the following data columns:
 [chr = chromosome] [pos = start position] [N = count methylated + count unmethylated] [X = count methylated]
 
+To run script:
+'''
+python Bismark_to_Permeth_DSS.py path/to/Bismark/format/file genome_name number_of_cores 
+'''
+
