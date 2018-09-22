@@ -12,12 +12,12 @@ This Bismark_to_Permeth_DSS.py script converts a Bismark format file to Permeth 
 
 **Outputs:**
 
-1. Permeth format bed files for each chromosome of interest in the Bismark format file should be generated in the 'Permeth' directory in the working directory. 
+1. Permeth format bed files for each chromosome of interest in the Bismark format file are generated in the 'Permeth' directory in the working directory. 
 (Chromosomes of interest vary depending on the type of genome specified but are all subsets of chromosomes 1-22, X, Y, and M.)
 Permeth format files contain the following data columns:
 [chromosome] [start position] [end position] [% methylated-sumReads] [placeholder00] [strand] [placeholder01] [placeholder02] [color] 
 
-2. DSS format files for each chromosome of interest in the Bismark format file should be generated in the 'DSS' directory in the working directory.
+2. DSS format files for each chromosome of interest in the Bismark format file are generated in the 'DSS' directory in the working directory.
 DSS format files contain the following data columns:
 [chr = chromosome] [pos = start position] [N = count methylated + count unmethylated] [X = count methylated]
 
