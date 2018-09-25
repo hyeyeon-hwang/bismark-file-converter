@@ -7,10 +7,10 @@ This script was developed to be the last step in the [CpG_Me](https://github.com
 
 1. Specify a Bismark cytosine report, which contains the following data columns:
 
-| chromosome    | start position| end position  | % methylated  | count methylated | count unmethylated|
-| ------------- | ------------- | ------------- | ------------- | ---------------- | ----------------- |
+| chromosome | start position | end position  | % methylated  | count methylated | count unmethylated |
+| ---------- | -------------- | ------------- | ------------- | ---------------- | ------------------ |
 
-2. The following genomes are currently suppourted: hg38, hg19, mm10, mm9, rheMac8, and rn6,
+2. The following genomes are currently suppourted: hg38, hg19, mm10, mm9, rheMac8, and rn6.
 
 3. The number of cores to use should be specified by a single integer, where each core requires 25 GB of RAM. 
 
@@ -28,6 +28,7 @@ Permeth files are intended to be used with [WGBS_Tools](https://github.com/kwdun
 2. DSS format files for each chromosome of interest are generated in the 'DSS' directory in the working directory.
 DSS format files contain the following data columns:
 
-`[chr = chromosome] [pos = start position] [N = count methylated + count unmethylated] [X = count methylated]`
+| chr = chromosome | pos = start position | N = count methylated + count unmethylated  | X = count methylated  |
+| ---------------- | -------------------- | ------------------------------------------ | --------------------- |
 
 DSS files are intended for use with statistical methods to call DMRs, such as [bsseq](https://bioconductor.org/packages/release/bioc/html/bsseq.html) and [DSS](https://bioconductor.org/packages/release/bioc/html/DSS.html). One example workflow that utilizes these files is [DMRfinder](https://github.com/cemordaunt/DMRfinder). 
