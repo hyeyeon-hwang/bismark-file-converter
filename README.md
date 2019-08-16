@@ -1,5 +1,5 @@
 # bismark-file-converter
-### This Bismark_to_Permeth_DSS.py script takes a [Bismark](https://github.com/FelixKrueger/Bismark) cytosine report that has been procesed to merge symmetric CpG sites and converts it to two legacy formats utilized by the LaSalle lab (Permeth and DSS).
+### This Bismark_to_Permeth_DSS.py script takes a [Bismark](https://github.com/FelixKrueger/Bismark) cytosine report that has been processed to merge symmetric CpG sites and converts it to two legacy formats utilized by the LaSalle lab (Permeth and DSS).
 
 This script was developed to be the last step in the [CpG_Me](https://github.com/ben-laufer/CpG_Me) pipeline, where it utilizes the merged Bismark cytosoine reports generated via `coverage2cytosine --merge_CpG` to provide continuity with existing pipelines. 
 
@@ -10,7 +10,7 @@ This script was developed to be the last step in the [CpG_Me](https://github.com
 | chromosome | start position | end position  | % methylated  | count methylated | count unmethylated |
 | ---------- | -------------- | ------------- | ------------- | ---------------- | ------------------ |
 
-2. The following genomes are currently suppourted: hg38, hg19, mm10, mm9, rheMac8, and rn6.
+2. The following genomes are currently supported: hg38, hg19, mm10, mm9, rheMac8, and rn6.
 
 3. The number of cores to use should be specified by a single integer, where each core requires 25 GB of RAM. 
 
